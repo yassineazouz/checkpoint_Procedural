@@ -1,0 +1,23 @@
+
+Function dot_product(v1, v2):
+    ps = 0
+    for i = 0 to length(v1):
+        ps = ps + v1[i] * v2[i]
+    return ps
+
+Function are_orthogonal(v1, v2):
+    result = dot_product(v1, v2)
+    if result == 0:
+        print "The vectors are orthogonal"
+    else:
+        print "The vectors are not orthogonal"
+
+Input:
+- n: number of pairs of vectors
+- v1: vector of IR
+- v2: vector of IR
+
+For i = 1 to n:
+    v1 = input("Enter vector v1: ")
+    v2 = input("Enter vector v2: ")
+    are_orthogonal(v1, v2)
